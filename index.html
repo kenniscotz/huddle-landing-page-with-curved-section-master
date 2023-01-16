@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/d62a78a121.js" crossorigin="anonymous"></script>
+    <title>Huddle</title>
+</head>
+<body>
+    <nav>
+        <div><img src="images/logo.svg" alt=""></div>
+        <p> <a href="#">Try it Free</a> </p>
+        <img src="images/icons8-crescent-moon-50.png" alt="" class="moon" id="icon">
+    </nav>
+
+    <header>
+        <h3>Build The Community Your Fans Will Love</h3>
+        <p>Hudddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion</p>
+        <button type="submit">Get Started For Free</button>
+
+    </header>
+
+    <main>
+        <div><img src="images/screen-mockups.svg" alt="" width="100%"></div>
+
+        <div>
+            <article>
+                <img src="images/icon-communities.svg" alt="" width="30px">
+                <h2>1.4K+</h2>
+                <p>Communites Formed</p>
+            </article>
+            <article>
+                <img src="images/icon-messages.svg" alt="" width="30px">
+                <h2>2.7m+</h2>
+                <p>Messages Sent</p>
+            </article>
+        </div>
+
+        <div id="background">
+            <section><h4>Grow Together</h4> <p>Generate meaning discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p></section>
+            <div><img src="images/illustration-grow-together.svg" alt="" width="100%"></div>
+        </div>
+
+        <div>
+            <div><img src="images/illustration-flowing-conversation.svg" alt="" width="100%"></div>
+            <section><h4>Flowing conversations</h4> <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more  natural flow.</p></section>
+        </div>
+
+        <div id="background">
+            <section><h4>Your Users </h4> <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means , once signed in to your app, your users can start chatting immediatey.</p></section>
+            <div><img src="images/illustration-your-users.svg" alt="" width="100%"></div>
+        </div>
+    </main>
+
+    <!-- the styling were the same, thats the header tag was reused -->
+
+    <aside>
+        <header>
+            <h3>Ready To Build Your  Community?</h3>
+            <button type="submit">Get Started For Free</button>
+
+        </header>
+    </aside>
+    <footer>
+        <div>
+            <img src="images/logo.svg" alt="" width="150px">
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aut, molestias illum. Harum, eos. hug horc fkeocv fjwccd
+            </p>
+            <section><img src="images/icon-phone.svg" alt="">Phone:<a href="">+1-543-123-4567</a></section>
+            <section><img src="images/icon-email.svg" alt="">Phone:<a href="">example@huddle.com</a></section>
+            <section><i class="fa-brands fa-square-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-square-twitter"></i></section>
+
+
+        </div>
+
+        <div>
+            <h4>NEWSLETTER</h4>
+            <P>TO RECIEVE TIPS ON HOW TO GROW YOUR COMMUNITY. SIGN UP TO  OUR WEEKLY NEWLETTER. WE'LL NEVER SEND YOU SPAM OR PASS ON YOUR EMAIL ADDRESS </P>
+             <span><input type="text"> <button>Subscribe</button> </span>
+        </div>
+
+    </footer>
+
+    
+    <script>
+        let icon = document.getElementById("icon");
+
+        
+        icon.onclick = function( ){
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "images/icons8-sun-star-48.png";
+              
+            } else {
+                icon.src = "images/icons8-crescent-moon-50.png"
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
